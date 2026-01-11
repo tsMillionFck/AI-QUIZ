@@ -4,7 +4,7 @@ import QuizConfig from "./components/QuizConfig";
 import QuizDisplay from "./components/QuizDisplay";
 import { Sun, Moon } from "lucide-react";
 
-const AI_KEY = "AIzaSyCQ4Z7krnJo7hczGXoOfE4gRufuD_hoF68"; // Insert Key
+const AI_KEY = import.meta.env.VITE_AI_KEY;
 
 function App() {
   const [inputMode, setInputMode] = useState("text"); // 'text' or 'topic'
